@@ -1,0 +1,105 @@
+/* Contenedores para separar secciones */
+#banksContainer, #paymentContainer {
+  margin: 20px auto;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Estilo general de las tarjetas */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  padding: 15px 20px;
+  width: 280px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+}
+
+/* Tarjetas para bancos */
+.card-bank {
+  border-left: 5px solid #007bff; /* azul */
+}
+
+/* Tarjetas para pagos creados / detalles */
+.card-payment-post {
+  border-left: 5px solid #28a745; /* verde */
+}
+
+/* Tarjetas para pagos eliminados */
+.card-payment-delete {
+  border-left: 5px solid #dc3545; /* rojo */
+}
+
+/* Enlaces dentro de las tarjetas */
+.card a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Input y botones */
+input#paymentIdInput {
+  width: 280px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  margin: 10px auto 20px;
+  display: block;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input#paymentIdInput:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botones */
+button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.card-payment-post {
+  border-left: 5px solid #28a745; /* verde */
+  background-color: #e6f4ea;
+  /* el resto igual */
+}
+
+.card-bank {
+  border-left: 5px solid #007bff; /* azul */
+  background-color: #e9f0ff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+}

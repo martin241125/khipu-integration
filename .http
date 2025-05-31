@@ -1,0 +1,21 @@
+### TRAER BANCOS
+GET http://localhost:3000/banks
+
+### CREAR PAGO
+POST http://localhost:3000/create-payment
+Content-Type: application/json
+
+{
+  "amount": 1000,
+  "currency": "ARS",
+  "subject": "Cobro de prueba"
+}
+
+
+### BUSCAR PAGO BY ID
+GET http://localhost:3000/payments/qu9bevj0no1d
+
+
+### ELIMINAR PAGOS BY ID
+DELETE http://localhost:3000/delete-payment/pzyiowusqya7
+

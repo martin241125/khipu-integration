@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Conexión Khipu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="createPaymentSection">
+  <h2>Crear Pago</h2>
+  <input type="number" id="amountInput" placeholder="Monto" />
+  <input type="text" id="currencyInput" placeholder="Divisa (ej: ARS)" />
+  <input type="text" id="subjectInput" placeholder="Asunto" />
+  <button onclick="createPayment()">Crear Pago</button>
+</div>
+
+<div id="paymentContainer"></div>
+<div id="banksContainer"></div>
+<div id="paymentContainer"></div>
+
+<input type="text" id="paymentIdInput" placeholder="ID del pago" />
+
+<button onclick="getBanks()">Traer Bancos</button>
+<button onclick="getPaymentDetail()">Buscar Pago por ID</button>
+<button onclick="deletePayment()">Eliminar Pago</button>
+
+<script src="home.js"></script>
+</body>
+</html>
